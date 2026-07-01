@@ -1,0 +1,60 @@
+:root {
+  --ink: #23231f;
+  --ink-soft: #69665e;
+  --paper: #f2efe7;
+  --paper-bright: #fbfaf5;
+  --paper-deep: #e8e3d8;
+  --line: #d6d0c4;
+  --line-strong: #b8b0a1;
+  --accent: #cf563c;
+  --accent-deep: #a73d29;
+  --moss: #586a5a;
+  --focus: #1f6f8b;
+  --font-display: 'Iowan Old Style', 'Songti SC', STSong, serif;
+  --font-body: 'Avenir Next', Avenir, 'PingFang SC', 'Hiragino Sans GB', sans-serif;
+  --font-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: var(--font-body);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(73, 66, 54, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(73, 66, 54, 0.025) 1px, transparent 1px),
+    var(--paper);
+  background-size: 24px 24px;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--focus) 55%, transparent);
+  outline-offset: 2px;
+}
+
+::selection {
+  color: var(--paper-bright);
+  background: var(--accent);
+}
